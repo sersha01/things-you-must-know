@@ -200,21 +200,6 @@ function add(num1, num2){
 | John Doe | john@gmail.com |
 ```
 ---
-# Tables
-| Name     | Email          |
-| -------- | -------------- |
-| Johs Doe | john@gmail.com |
-| John Doe | john@gmail.com |
-
-## code 
-
-```markdown
-| Name     | Email          |
-| -------- | -------------- |
-| Johs Doe | john@gmail.com |
-| John Doe | john@gmail.com |
-```
----
 # Task Lisk
 > * [x] Task 1
 > * [x] Task 2
