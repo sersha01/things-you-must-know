@@ -1,10 +1,5 @@
-[Remove Choice From Choices In Froms](#remove-choice-from-choices-in-froms)
+# Remove Choice From Choices In Froms
 
-
-
-___
-## Remove Choice From Choices In Froms
----
 > `models.py`
 ```python
 from django.db import models
@@ -20,7 +15,7 @@ class User(models.Model):
 	user_type = models.IntegerField(default=0, choices=TYPE_CHOICES)
 ```
 
-> ## `forms.py`
+>  `forms.py`
 ```python
 from django import forms
 
