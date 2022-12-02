@@ -11,15 +11,15 @@ I created a model of vendor who have 2 image fields. User might upload high qual
 
 models.py
 ```python
+from datetime import datetime
+from PIL import Image
+
 
 def get_random_string():
     chars = string.ascii_lowercase
     strin = ''.join(random.choice(chars) for _ in range(6))
     date = datetime.now().strftime("%m%d%H%M%S")
     return  date + strin
-
-
-
 
 
 def image_compressor(imagefile, dir_name):
@@ -46,9 +46,6 @@ def image_compressor(imagefile, dir_name):
     save_location = image_location_head + "/" + dir_name + "/" + filename
     foo.save(save_location, optimize = True, quality = 100)
     return '/media/' + dir_name + "/" + filename
-
-
-
 
 
 class Vendor(models.Model):
